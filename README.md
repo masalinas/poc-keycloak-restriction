@@ -79,6 +79,20 @@ Now we will login from postman again but using the user account. The result will
 
 ![End-to-End user account login](./images/end-to-end-user-login.png "End-to-End user account login")
 
+- **STEP10**: Bonus: restrict access to account profile
+
+We can restrict also the access to account creating a new flow cloned from browser default flow like this
+
+![Restriction Account Access](./images/restriction-access-count.png "Restriction Account Access")
+
+We must bind this custom flow to Browser default flow and configure as previuslly the task **Restric user authentication on clients** 
+
+Now if we open the from ui the account access for our realm lije this an use the maintenace the user will logged correctly, but is we use the user we will obtain a **access denied** error
+
+```
+http://localhost:8080/realms/mock/account/
+```
+
 ## Links
 
 - [Ofitial Restrict Keycloak Client Extension](https://github.com/sventorben/keycloak-restrict-client-auth)
