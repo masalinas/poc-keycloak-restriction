@@ -49,6 +49,8 @@ Created a new realm called **mock**
  - User with name **user** attached to the role **user** of the client **mock**
  - User with name **maintenance** attached to the role **restricted-access** of the client **mock**
 
+![Mock Users](./images/mock-users.png "Mock Users")
+
  - **STEP06**: Created a restriction flow
  
  Create a new restriction flow cloned from **direct grant** default flow adding a new subflow at last where implement the restriction task like this:
