@@ -1,5 +1,5 @@
 # Description
-PoC Keycloak restriction mode for role and policy based flow modes
+PoC Keycloak Restriction Extension for role and policy based flow modes
 
 ## Steps
 
