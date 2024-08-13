@@ -33,7 +33,7 @@ Created a new realm named **mock**
 
 ![Mock Client](./images/mock-client.png "Mock Client")
 
-- **STEP04**: Created two roles
+- **STEP05**: Created two roles
  
  Created two roles inside the previous client, like this:
 
@@ -42,7 +42,7 @@ Created a new realm named **mock**
 
 ![Mock Roles](./images/mock-roles.png "Mock Roles")
 
-- **STEP05**: Created two users
+- **STEP06**: Created two users
  
  Created two users and asign the previous roles to each one like this:
 
@@ -51,25 +51,25 @@ Created a new realm named **mock**
 
 ![Mock Users](./images/mock-users.png "Mock Users")
 
- - **STEP06**: Created a restriction flow
+ - **STEP07**: Created a restriction flow
  
  Create a new flow named **direct grant maintenance** cloned from **direct grant** default flow adding a new subflow at last, where implement the restriction task **Restric user authentication on clients** (supported by the extension) like this:
 
 ![Restriction Flow](./images/restriction-flow.png "Restriction Flow")
 
-- **STEP07**: Configure Restric user authentication on clients task
+- **STEP08**: Configure Restric user authentication on clients task
  
 Configure **Restric user authentication on clients** task like this. We must set the same alias as the default restriction role name previously configured as **restricted-access**
 
 ![Restrict User Authentication Configuration](./images/restrict-user-authentication-configuration.png "Restrict User Authentication Configuration")
 
-- **STEP08**: Bind Restriction Flow to direct grant default flow
+- **STEP09**: Bind Restriction Flow to direct grant default flow
  
 After save the **direct grant maintenance** flow bind this flow to default direct grant flow, like this:
 
 ![Direct Grant Default Flow](./images/direct-grant-default-flow.png "Direct Grant Default Flow")
 
-- **STEP09**: end-to-end tests
+- **STEP10**: end-to-end tests
  
 From postman we will try to login using the maintenace account. The result will be success because this user has the **restricted-access** role asigned:
 
@@ -79,7 +79,7 @@ Now we will login from postman again but using the user account. The result will
 
 ![End-to-End user account login](./images/end-to-end-user-login.png "End-to-End user account login")
 
-- **STEP10**: Bonus: restrict access to account profile
+- **STEP11**: Bonus: restrict access to account profile
 
 We can restrict also the access to account creating a new flow cloned from browser default flow like this
 
